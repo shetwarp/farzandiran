@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرزند ایران | جاوید نام </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap');
+
+        :root {
+            --bg-color: #000000;
+            --text-primary: #ffffff;
+            --accent-color: #ff0000;
+            --card-bg: #111111;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Vazirmatn', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            background: radial-gradient(circle, #1a0000 0%, #000000 100%);
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 10vw, 6rem);
+            font-weight: 900;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: -2px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .subtitle {
+            font-size: clamp(1rem, 4vw, 1.8rem);
+            font-weight: 700;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+        .scroll-indicator {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+            animation: bounce 2s infinite;
+        }
+
+        /* Search Section */
+        .search-container {
+            padding: 40px 20px;
+            position: sticky;
+            top: 0;
+            background: rgba(0,0,0,0.9);
+            z-index: 100;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        #nameSearch {
+            width: 100%;
+            max-width: 500px;
+            padding: 15px 25px;
+            border-radius: 50px;
+            border: 2px solid var(--accent-color);
+            background: transparent;
+            color: white;
+            font-size: 1.1rem;
+            font-family: 'Vazirmatn';
+            outline: none;
+        }
+
+        /* Names Grid */
+        .names-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .name-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-left: 4px solid var(--accent-color);
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .name-card:hover {
+            background: #220000;
+            transform: translateY(-5px);
+        }
+
+        .name-card h3 {
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+
+        .name-card p {
+            color: #888;
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            border-top: 1px solid #222;
+            margin-top: 50px;
+            color: #555;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .names-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+            .name-card h3 { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+
+   
+<script>
+
+alert("برای پخش موزیک هر جایی که میخواید روی صفحه کلیک کنید")
+
+
+
+
+</script>
+
+   <audio id="music" src="music.mp3" loop></audio>
+
+<script>
+  document.addEventListener("click", () => {
+    document.getElementById("music").play();
+  }, { once: true });
+</script>
+
+
+
+    <header>
+        <h1>فرزند ایران</h1>
+        <p class="subtitle">یادمان ۱۸ و ۱۹ دی ماه ۱۴۰۴</p>
+        <p>هر نام، داستانی‌ست که هرگز فراموش نخواهد شد.</p>
+        <div class="scroll-indicator">▼ برای مشاهده اسامی به پایین اسکرول کنید</div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="nameSearch" placeholder="جستجوی جاوید نام ...">
+    </div>
+
+    <div class="names-container" id="namesList">
+       
+    </div>
+
+    <footer>
+        <p>از تمامی خانواده های داغداری که نام عزیزان جاوید نام شون  داخل سایت نبود عذر میخوام</p>
+    </footer>
+
+    <script>
+        const namesData = [
+            { name: "علی اباذری", date: "۱۸ دی ۱۴۰۴" },
+            { name: "امیرحسین ابراهیم پور", date: "۱۹ دی ۱۴۰۴" },
+            { name: "احد ابراهیم پورعبدلی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "عطاءاله ابراهیم پورقاضیانی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "مریم ابراهیم زاده", date: "۱۸ دی ۱۴۰۴" },
+            { name: "محسن ابراهیم زاده حسنجانی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "امیررضا ابراهیم نژادگرجی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "سارا ابراهیمی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "امیررضا ابراهیمی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "سپهر ابراهیمی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "عبداله ابراهیمی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "مریم ابراهیمی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "امیرحسین ابراهیمی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "سیدمحمد ابراهیمی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "مهدی ابراهیمی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "مهرداد ابراهیمی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "حمید ابراهیمی احمدآباد", date: "۱۸ دی ۱۴۰۴" },
+            { name: "جواد ابراهیمی ارتیانی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "صادق ابراهیمی پنجکی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "معصومه ابراهیمی تازه آبادی گلوندانی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "بیژن ابراهیمی توی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "سعید ابراهیمی علیسرائی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "سعید ابراهیمی فر", date: "۱۸ دی ۱۴۰۴" },
+            { name: "بهنام ابراهیمیان", date: "۱۹ دی ۱۴۰۴" },
+            { name: "حسن ابراهیمیان پیربازاری", date: "۱۸ دی ۱۴۰۴" },
+            { name: "امید ابو", date: "۱۹ دی ۱۴۰۴" },
+            { name: "مهدی ابوالحسن", date: "۱۸ دی ۱۴۰۴" },
+            { name: "علیرضا ابوالقاسمی صحت", date: "۱۹ دی ۱۴۰۴" },
+            { name: "کیان ابوالهادی زاده", date: "۱۸ دی ۱۴۰۴" },
+            { name: "آنیلا ابوطالبیان الیادرانی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "مصطفی ابوفاضلی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "پارسا ابیضی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "ایلیا اجاقلو", date: "۱۸ دی ۱۴۰۴" },
+            { name: "امیررضا اجتهادی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "الهام احدی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "غلامحسین احدی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "یزدان احسان بخش", date: "۱۸ دی ۱۴۰۴" },
+            { name: "محمد احسانی قهرمانلو", date: "۱۹ دی ۱۴۰۴" },
+            { name: "فرشاد احسانی نیری", date: "۱۸ دی ۱۴۰۴" },
+            { name: "پیام احمدپرست", date: "۱۹ دی ۱۴۰۴" },
+            { name: "سیدعرشیا احمدپور", date: "۱۸ دی ۱۴۰۴" },
+            { name: "هادی احمدپور", date: "۱۹ دی ۱۴۰۴" },
+            { name: "داود احمدزاده", date: "۱۸ دی ۱۴۰۴" },
+            { name: "امیررضا احمدزاده", date: "۱۹ دی ۱۴۰۴" },
+            { name: "بهرام احمدلو", date: "۱۸ دی ۱۴۰۴" },
+            { name: "آرش احمدوند", date: "۱۹ دی ۱۴۰۴" },
+            { name: "زهرا احمدوند", date: "۱۸ دی ۱۴۰۴" },
+            { name: "امیر احمدوند", date: "۱۹ دی ۱۴۰۴" },
+            { name: "مهدی احمدی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "محمدرضا احمدی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "امیر احمدی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "سعید احمدی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "سیدمهدی احمدی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "امیرمسعود احمدی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "نیما احمدی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "امید احمدی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "محمدرضا احمدی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "کامران احمدی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "اکبر احمدی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "کامران احمدی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "کامیاب احمدی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "محمد احمدی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "ایرج احمدی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "زینب احمدی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "سمیر احمدی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "علی احمدی", date: "۱۹ دی ۱۴۰۴" },
+            { name: "علیرضا احمدی بابادی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "صمد احمدی برسری", date: "۱۹ دی ۱۴۰۴" },
+            { name: "علیرضا احمدی ترکمانی", date: "۱۸ دی ۱۴۰۴" },
+            { name: "محسن احمدی زاده", date: "۱۹ دی ۱۴۰۴" },
+            { name: "امیرحسین احمدی شریف", date: "۱۸ دی ۱۴۰۴" },
+            { name: "محمد احمدی کتایونچه", date: "۱۹ دی ۱۴۰۴" },
+            { name: "روح اله احمدی کوه بنانی", date: "۱۹ دی ۱۴۰۴" },
+            
+        ];
+
+        const container = document.getElementById('namesList');
+        const searchInput = document.getElementById('nameSearch');
+
+        function displayNames(filter = "") {
+            container.innerHTML = "";
+            const filtered = namesData.filter(item => item.name.includes(filter));
+            
+            filtered.forEach(person => {
+                const card = document.createElement('div');
+                card.className = 'name-card';
+                card.innerHTML = `
+                    <h3>${person.name}</h3>
+                    <p>${person.date}</p>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        searchInput.addEventListener('input', (e) => {
+            displayNames(e.target.value);
+        });
+
+        displayNames();
+    </script>
+</body>
+</html>
